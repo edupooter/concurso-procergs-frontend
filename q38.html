@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-    
+    <section id="conteudo"></section>
+
+    <script>
+        const conteudo = document.getElementById('conteudo');
+        const titulo = document.createElement('h1');
+        titulo.textContent = 'Título';
+        conteudo.appendChild(titulo);
+        const paragrafo = document.createElement('p');
+        paragrafo.textContent = 'Conteúdo deste parágrafo.';
+        conteudo.appendChild(paragrafo);
+        const link = document.createElement('a');
+        link.textContent = 'Link';
+        link.setAttribute("href", "https://google.com");
+        paragrafo.appendChild(link);
+    </script>
 </body>
 </html>
